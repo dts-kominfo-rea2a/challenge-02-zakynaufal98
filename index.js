@@ -27,7 +27,9 @@ function lakukanLooping(arrPegawai) {
 
   for (let i = 0; i < arrayObjectPegawai.length; i++) {
     let namaLengkap =
-      arrayObjectPegawai[i].namaDepan + "" + arrayObjectPegawai[i].namaBelakang;
+      arrayObjectPegawai[i].namaDepan +
+      " " +
+      arrayObjectPegawai[i].namaBelakang;
     hasilLooping.push(namaLengkap);
   }
 
@@ -91,10 +93,10 @@ function main(data) {
   console.log(hasil.hasilLooping);
   console.log(hasil.jumlahPria);
   console.log(hasil.jumlahWanita);
-  console.log(hasil.komentar);
   return hasil;
 }
 
 main(arrayObjectPegawai);
 
+console.log(hasil.komentar);
 module.exports = main;
