@@ -78,6 +78,8 @@ function lakukanLooping(arrPegawai) {
     komentar = "Jumlah Pria dan Wanita berimbang";
   }
 
+  console.log(komentar);
+
   // ! JANGAN DIMODIFIKASI
   return {
     hasilLooping,
@@ -98,5 +100,4 @@ function main(data) {
 
 main(arrayObjectPegawai);
 
-console.log(hasil.komentar);
 module.exports = main;
